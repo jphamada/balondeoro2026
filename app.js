@@ -901,11 +901,13 @@ function closeVoteModal() {
   document.getElementById("voteModal").style.display = "none";
 }
 
+const SHARE_TARGET_URL = "https://www.lagaceta.com.ar/nota/1159704/deportes/vota-la-gaceta-elegi-entre-30-candidatos-quien-merece-ganar-balon-oro-2026.html";
+
 function openShareDialog() {
   const shareData = {
-    title: "Votá al ganador del Balón de Oro 2026",
-    text: "¡Ya voté a mi candidato favorito al Balón de Oro 2026! Entrá y elegí al tuyo en esta votación interactiva:",
-    url: window.location.href
+    title: "Votá en LA GACETA: elegí quién merece ganar el Balón de Oro 2026",
+    text: "¡Votá al jugador que querés que gane el Balón de Oro 2026 en LA GACETA y mirá la tendencia en vivo!",
+    url: SHARE_TARGET_URL
   };
 
   if (navigator.share) {
@@ -919,8 +921,8 @@ function openShareDialog() {
 
 function openShareModalFallback() {
   const modal = document.getElementById("shareModal");
-  const currentUrl = encodeURIComponent(window.location.href);
-  const shareText = encodeURIComponent("Votá al jugador que querés que gane el Balón de oro 2026. ¡Mirá la tendencia en vivo!");
+  const currentUrl = encodeURIComponent(SHARE_TARGET_URL);
+  const shareText = encodeURIComponent("Votá en LA GACETA al jugador que querés que gane el Balón de oro 2026. ¡Mirá la tendencia en vivo!");
 
   document.getElementById("shareWhatsapp").href = `https://api.whatsapp.com/send?text=${shareText}%20${currentUrl}`;
   document.getElementById("shareTwitter").href = `https://twitter.com/intent/tweet?text=${shareText}&url=${currentUrl}`;
@@ -939,7 +941,7 @@ async function copyPageLink() {
   const copyBtnText = document.getElementById("copyLinkText");
 
   try {
-    await navigator.clipboard.writeText(window.location.href);
+    await navigator.clipboard.writeText(SHARE_TARGET_URL);
     copyBtnText.textContent = "¡Copiado!";
     toast.style.display = "block";
     setTimeout(() => {
@@ -948,7 +950,7 @@ async function copyPageLink() {
     }, 3000);
   } catch (err) {
     const input = document.createElement("input");
-    input.value = window.location.href;
+    input.value = SHARE_TARGET_URL;
     document.body.appendChild(input);
     input.select();
     document.execCommand("copy");
