@@ -12,8 +12,7 @@ const NOMINEES_DATA = [
     bio: "Mediocampista todoterreno inglés. Combina despliegue físico, lectura táctica privilegiada y una extraordinaria llegada al área rival con goles decisivos.",
     wikiSlug: "Jude_Bellingham",
     wikiSlugEs: "Jude_Bellingham",
-    fileName: "Jude_Bellingham_2024.jpg",
-    initialVotes: 1420
+    fileName: "Jude_Bellingham_2024.jpg"
   },
   {
     id: "pau-cubarsi",
@@ -22,8 +21,7 @@ const NOMINEES_DATA = [
     bio: "Zaguero central de pulida técnica y precisión milimétrica en salida de balón. Una de las mayores joyas defensivas surgidas de La Masia con madurez de veterano.",
     wikiSlug: "Pau_Cubarsí",
     wikiSlugEs: "Pau_Cubarsí",
-    fileName: "Pau_Cubarsi_2024_(cropped).jpg",
-    initialVotes: 890
+    fileName: "Pau_Cubarsi_2024_(cropped).jpg"
   },
   {
     id: "marc-cucurella",
@@ -32,8 +30,7 @@ const NOMINEES_DATA = [
     bio: "Lateral izquierdo incansable, de despliegue vertiginoso por la banda, solvencia en los duelos individuales y un temperamento competitivo ganador.",
     wikiSlug: "Marc_Cucurella",
     wikiSlugEs: "Marc_Cucurella",
-    fileName: "Marc_Cucurella_2024.jpg",
-    initialVotes: 610
+    fileName: "Marc_Cucurella_2024.jpg"
   },
   {
     id: "ousmane-dembele",
@@ -42,8 +39,7 @@ const NOMINEES_DATA = [
     bio: "Extremo desequilibrante, ambidiestro y puro regate. Su capacidad para desbordar y asistir genera constante peligro en el ataque del París Saint-Germain.",
     wikiSlug: "Ousmane_Dembélé",
     wikiSlugEs: "Ousmane_Dembélé",
-    fileName: "Ousmane_Dembélé_2018.jpg",
-    initialVotes: 730
+    fileName: "Ousmane_Dembélé_2018.jpg"
   },
   {
     id: "luis-diaz",
@@ -52,8 +48,7 @@ const NOMINEES_DATA = [
     bio: "Atacante colombiano veloz y punzante. Maestro en el mano a mano y de definición contundente que marca la diferencia en las grandes citas europeas.",
     wikiSlug: "Luis_Díaz_(footballer,_born_1997)",
     wikiSlugEs: "Luis_Díaz",
-    fileName: "Luis_Díaz_2023.jpg",
-    initialVotes: 980
+    fileName: "Luis_Díaz_2023.jpg"
   },
   {
     id: "bruno-fernandes",
@@ -62,8 +57,7 @@ const NOMINEES_DATA = [
     bio: "Capitán y cerebro creativo de los Red Devils. Especialista en pases entre líneas, lanzamientos de media distancia y un liderazgo vocal infatigable.",
     wikiSlug: "Bruno_Fernandes",
     wikiSlugEs: "Bruno_Fernandes",
-    fileName: "Bruno_Fernandes_2023.jpg",
-    initialVotes: 840
+    fileName: "Bruno_Fernandes_2023.jpg"
   },
   {
     id: "erling-haaland",
@@ -72,8 +66,7 @@ const NOMINEES_DATA = [
     bio: "Letal ariete noruego y demoledor goleador de área. Potencia física abrumadora y un instinto asesino para pulverizar récords en Premier League y Champions.",
     wikiSlug: "Erling_Haaland",
     wikiSlugEs: "Erling_Haaland",
-    fileName: "Erling_Haaland_2023_(cropped-v2).jpg",
-    initialVotes: 1650
+    fileName: "Erling_Haaland_2023_(cropped-v2).jpg"
   },
   {
     id: "gabriel",
@@ -82,8 +75,7 @@ const NOMINEES_DATA = [
     bio: "Pilar de la sólida defensa de los Gunners. Destaca por su poderío aéreo en ambas áreas, solvencia en la marca y jerarquía en momentos de alta tensión.",
     wikiSlug: "Gabriel_Magalhães",
     wikiSlugEs: "Gabriel_Magalhães",
-    fileName: "Gabriel_Magalhães_2023.jpg",
-    initialVotes: 520
+    fileName: "Gabriel_Magalhães_2023.jpg"
   },
   {
     id: "harry-kane",
@@ -92,8 +84,7 @@ const NOMINEES_DATA = [
     bio: "Centrodelantero de jerarquía mundial. Además de su letal puntería frente a los tres palos, actúa como armador y eje con una visión de juego excelsa.",
     wikiSlug: "Harry_Kane",
     wikiSlugEs: "Harry_Kane",
-    fileName: "Harry_Kane_2023.jpg",
-    initialVotes: 1290
+    fileName: "Harry_Kane_2023.jpg"
   },
   {
     id: "achraf-hakimi",
@@ -102,8 +93,7 @@ const NOMINEES_DATA = [
     bio: "Uno de los laterales derechos más veloces e influyentes del planeta. Imparable en transiciones rápidas y clave en el circuito ofensivo y defensivo.",
     wikiSlug: "Achraf_Hakimi",
     wikiSlugEs: "Achraf_Hakimi",
-    fileName: "Achraf_Hakimi_2022.jpg",
-    initialVotes: 710
+    fileName: "Achraf_Hakimi_2022.jpg"
   },
   {
     id: "lamine-yamal",
@@ -112,8 +102,7 @@ const NOMINEES_DATA = [
     bio: "El prodigio zurdo del fútbol mundial. Desparrama rivales con fantasía, visión periférica y madurez precoz que encandila a los aficionados del planeta.",
     wikiSlug: "Lamine_Yamal",
     wikiSlugEs: "Lamine_Yamal",
-    fileName: "Lamine_Yamal_2024_(cropped).jpg",
-    initialVotes: 1940
+    fileName: "Lamine_Yamal_2024_(cropped).jpg"
   },
   {
     id: "khvicha-kvaratskhelia",
@@ -122,8 +111,7 @@ const NOMINEES_DATA = [
     bio: "Habilidoso extremo georgiano de regate impredecible y cambio de ritmo infernal. Dueño de una pegada temible con ambos perfiles.",
     wikiSlug: "Khvicha_Kvaratskhelia",
     wikiSlugEs: "Khvicha_Kvaratskhelia",
-    fileName: "Khvicha_Kvaratskhelia_2023.jpg",
-    initialVotes: 660
+    fileName: "Khvicha_Kvaratskhelia_2023.jpg"
   },
   {
     id: "marquinhos",
@@ -132,8 +120,7 @@ const NOMINEES_DATA = [
     bio: "Capitán y baluarte de la zaga parisina. Referente de liderazgo, anticipación, quite limpio y templanza en competiciones internacionales de élite.",
     wikiSlug: "Marquinhos",
     wikiSlugEs: "Marquinhos",
-    fileName: "Marquinhos_2018.jpg",
-    initialVotes: 490
+    fileName: "Marquinhos_2018.jpg"
   },
   {
     id: "sadio-mane",
@@ -142,8 +129,7 @@ const NOMINEES_DATA = [
     bio: "Estrella senegalesa consagrada. Fuerza física, aceleración letal y un compromiso colectivo que sigue deslumbrando y marcando época.",
     wikiSlug: "Sadio_Mané",
     wikiSlugEs: "Sadio_Mané",
-    fileName: "Sadio_Mané_2022.jpg",
-    initialVotes: 580
+    fileName: "Sadio_Mané_2022.jpg"
   },
   {
     id: "lautaro-martinez",
@@ -152,8 +138,7 @@ const NOMINEES_DATA = [
     bio: "Goleador y líder indiscutido del Inter y la Selección Argentina. Férreo en el cuerpo a cuerpo, definidor voraz y capitán ejemplar en citas cumbres.",
     wikiSlug: "Lautaro_Martínez",
     wikiSlugEs: "Lautaro_Martínez",
-    fileName: "Lautaro_Martínez_2022.jpg",
-    initialVotes: 1380
+    fileName: "Lautaro_Martínez_2022.jpg"
   },
   {
     id: "kylian-mbappe",
@@ -162,8 +147,7 @@ const NOMINEES_DATA = [
     bio: "Velocidad explosiva y definición quirúrgica. El astro francés deslumbra con su capacidad para definir partidos en un instante de genialidad pura.",
     wikiSlug: "Kylian_Mbappé",
     wikiSlugEs: "Kylian_Mbappé",
-    fileName: "2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank–129_(cropped).jpg",
-    initialVotes: 2110
+    fileName: "2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank–129_(cropped).jpg"
   },
   {
     id: "nuno-mendes",
@@ -172,8 +156,7 @@ const NOMINEES_DATA = [
     bio: "Marcador de punta portugués de altísima velocidad, solidez en el retroceso defensivo y gran capacidad para asociarse y centrar con precisión.",
     wikiSlug: "Nuno_Mendes_(footballer,_born_2002)",
     wikiSlugEs: "Nuno_Mendes",
-    fileName: "Nuno_Mendes_2022.jpg",
-    initialVotes: 440
+    fileName: "Nuno_Mendes_2022.jpg"
   },
   {
     id: "lionel-messi",
@@ -182,8 +165,7 @@ const NOMINEES_DATA = [
     bio: "El máximo ganador histórico del Balón de Oro. Su magia incombustible, visión panorámica del juego y tiro libre impecable continúan deleitando al mundo.",
     wikiSlug: "Lionel_Messi",
     wikiSlugEs: "Lionel_Messi",
-    fileName: "Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg",
-    initialVotes: 2350
+    fileName: "Lionel-Messi-Argentina-2022-FIFA-World-Cup_(cropped).jpg"
   },
   {
     id: "michael-olise",
@@ -192,8 +174,7 @@ const NOMINEES_DATA = [
     bio: "Extremo exquisito dotado de una zurda de seda. Desborde, pausa elegante y pegada en pelota parada que aporta frescura y vértigo ofensivo.",
     wikiSlug: "Michael_Olise",
     wikiSlugEs: "Michael_Olise",
-    fileName: "Michael_Olise_2023.jpg",
-    initialVotes: 780
+    fileName: "Michael_Olise_2023.jpg"
   },
   {
     id: "joao-neves",
@@ -202,8 +183,7 @@ const NOMINEES_DATA = [
     bio: "Volante central dinámico e inteligente. Recuperador feroz, seguro en la distribución corta y con despliegue incansable a lo largo de los 90 minutos.",
     wikiSlug: "João_Neves_(footballer)",
     wikiSlugEs: "João_Neves",
-    fileName: "Joao_Neves_2024.jpg",
-    initialVotes: 640
+    fileName: "Joao_Neves_2024.jpg"
   },
   {
     id: "willian-pacho",
@@ -212,8 +192,7 @@ const NOMINEES_DATA = [
     bio: "Central ecuatoriano de enorme fortaleza física, corte limpio y templanza para neutralizar a los atacantes más temibles de Europa.",
     wikiSlug: "Willian_Pacho",
     wikiSlugEs: "Willian_Pacho",
-    fileName: "Willian_Pacho_2023.jpg",
-    initialVotes: 470
+    fileName: "Willian_Pacho_2023.jpg"
   },
   {
     id: "julian-quinones",
@@ -222,8 +201,7 @@ const NOMINEES_DATA = [
     bio: "Delantero de potencia deslumbrante, capacidad goleadora y gran entrega táctica que continúa dejando su huella internacional con determinación.",
     wikiSlug: "Julián_Quiñones",
     wikiSlugEs: "Julián_Quiñones",
-    fileName: "Julián_Quiñones_2023.jpg",
-    initialVotes: 410
+    fileName: "Julián_Quiñones_2023.jpg"
   },
   {
     id: "declan-rice",
@@ -232,8 +210,7 @@ const NOMINEES_DATA = [
     bio: "Mediocampista británico con dominio absoluto de la zona medular. Gran quite, balance táctico impecable e imponente zancada box-to-box.",
     wikiSlug: "Declan_Rice",
     wikiSlugEs: "Declan_Rice",
-    fileName: "Declan_Rice_2023.jpg",
-    initialVotes: 820
+    fileName: "Declan_Rice_2023.jpg"
   },
   {
     id: "rodri",
@@ -242,8 +219,7 @@ const NOMINEES_DATA = [
     bio: "El director de orquesta por excelencia del fútbol contemporáneo. Inteligencia posicional, jerarquía, golazos desde fuera del área y dueño de los tiempos.",
     wikiSlug: "Rodri_(footballer,_born_1996)",
     wikiSlugEs: "Rodrigo_Hernández_Cascante",
-    fileName: "Rodri_2024.jpg",
-    initialVotes: 1870
+    fileName: "Rodri_2024.jpg"
   },
   {
     id: "fabian-ruiz",
@@ -252,8 +228,7 @@ const NOMINEES_DATA = [
     bio: "Volante estilista con zurda privilegiada. Manejo sutil del balón, llegada al gol desde segunda línea y consagrado en las citas internacionales de gala.",
     wikiSlug: "Fabián_Ruiz",
     wikiSlugEs: "Fabián_Ruiz",
-    fileName: "Fabian_Ruiz_2024.jpg",
-    initialVotes: 690
+    fileName: "Fabian_Ruiz_2024.jpg"
   },
   {
     id: "ferran-torres",
@@ -262,8 +237,7 @@ const NOMINEES_DATA = [
     bio: "Atacante versátil capaz de desempeñarse en todo el frente ofensivo. Destaca por sus diagonales inteligentes, instinto de gol y sacrificio de presión.",
     wikiSlug: "Ferran_Torres",
     wikiSlugEs: "Ferran_Torres",
-    fileName: "Ferran_Torres_2022.jpg",
-    initialVotes: 590
+    fileName: "Ferran_Torres_2022.jpg"
   },
   {
     id: "william-saliba",
@@ -272,8 +246,7 @@ const NOMINEES_DATA = [
     bio: "Uno de los defensores más elegantes y efectivos de Europa. Rápido en la cobertura, sereno bajo presión e inquebrantable en el uno contra uno.",
     wikiSlug: "William_Saliba",
     wikiSlugEs: "William_Saliba",
-    fileName: "William_Saliba_2023.jpg",
-    initialVotes: 910
+    fileName: "William_Saliba_2023.jpg"
   },
   {
     id: "dayot-upamecano",
@@ -282,8 +255,7 @@ const NOMINEES_DATA = [
     bio: "Zaguero de gran presencia física, veloz en distancias largas y con una sólida anticipación en la última línea defensiva bávara.",
     wikiSlug: "Dayot_Upamecano",
     wikiSlugEs: "Dayot_Upamecano",
-    fileName: "Dayot_Upamecano_2022.jpg",
-    initialVotes: 510
+    fileName: "Dayot_Upamecano_2022.jpg"
   },
   {
     id: "vinicius-jr",
@@ -292,8 +264,7 @@ const NOMINEES_DATA = [
     bio: "Acrobático y punzante extremo brasileño. Su desequilibrio individual, velocidad pura y protagonismo en las finales lo sitúan en la cúspide mundial.",
     wikiSlug: "Vinícius_Júnior",
     wikiSlugEs: "Vinícius_Júnior",
-    fileName: "Vinicius_Junior_2021.jpg",
-    initialVotes: 2190
+    fileName: "Vinicius_Junior_2021.jpg"
   },
   {
     id: "vitinha",
@@ -302,14 +273,19 @@ const NOMINEES_DATA = [
     bio: "Brújula del mediocampo parisino. Protege la posesión bajo cualquier presión, aporta ritmo dinámico y claridad magistral en la creación de juego.",
     wikiSlug: "Vitinha_(footballer,_born_2000)",
     wikiSlugEs: "Vitinha",
-    fileName: "Vitinha_2022.jpg",
-    initialVotes: 760
+    fileName: "Vitinha_2022.jpg"
   }
 ];
 
-// Constantes de almacenamiento
+// Constantes de almacenamiento (Versión limpia sin datos ficticios)
 const STORAGE_KEYS = {
-  VOTES_DATA: "balondeoro_2026_votes_count",
+  VOTES_DATA: "balondeoro_2026_real_votes_v2",
+  USER_IP: "balondeoro_2026_client_ip",
+  VOTED_IPS: "balondeoro_2026_blocked_ips",
+  HAS_VOTED: "balondeoro_2026_voted_player_id",
+  VOTE_TIMESTAMP: "balondeoro_2026_vote_time",
+  PHOTOS_CACHE: "balondeoro_2026_photos_cache"
+};
   USER_IP: "balondeoro_2026_client_ip",
   VOTED_IPS: "balondeoro_2026_blocked_ips",
   HAS_VOTED: "balondeoro_2026_voted_player_id",
@@ -466,28 +442,48 @@ document.addEventListener("DOMContentLoaded", async () => {
 /**
  * Sincronización en tiempo real con Cloud Firestore
  */
-function initFirebaseRealtimeSync() {
+async function initFirebaseRealtimeSync() {
   if (!hasValidFirebase()) {
-    console.log("ℹ️ Firebase Firestore en espera de configuración de apiKey. Operando con caché local.");
+    console.log("ℹ️ Firebase Firestore en espera de credenciales. Operando con estado local.");
     return;
   }
 
   try {
     const totalsDocRef = db.collection("totals").doc("balondeoro2026");
 
-    // Inicializar documento en Firestore si no existe
-    totalsDocRef.get().then(doc => {
-      if (!doc.exists) {
-        const initialPayload = { totalVotes: 0, createdAt: firebase.firestore.FieldValue.serverTimestamp() };
-        NOMINEES_DATA.forEach(p => {
-          initialPayload[p.id] = p.initialVotes;
-          initialPayload.totalVotes += p.initialVotes;
+    // Reconciliación: verificar los votos reales de la colección 'votes'
+    // para eliminar cualquier dato simulado residual que se haya guardado previamente
+    try {
+      const votesSnapshot = await db.collection("votes").get();
+      const realCounts = {};
+      NOMINEES_DATA.forEach(p => { realCounts[p.id] = 0; });
+      let realTotalVotes = 0;
+
+      votesSnapshot.forEach(doc => {
+        const vData = doc.data();
+        if (vData && vData.playerId && typeof realCounts[vData.playerId] === "number") {
+          realCounts[vData.playerId]++;
+          realTotalVotes++;
+        }
+      });
+
+      const currentTotalsDoc = await totalsDocRef.get();
+      const currentData = currentTotalsDoc.exists ? currentTotalsDoc.data() : null;
+
+      // Si no existe o tiene datos simulados (más de 100 votos cuando en votes hay pocos)
+      const isSimulated = currentData && typeof currentData.totalVotes === "number" && currentData.totalVotes > 100 && votesSnapshot.size < 50;
+
+      if (!currentTotalsDoc.exists || isSimulated) {
+        console.log(`🧹 Limpiando datos simulados en Firestore. Votos reales encontrados: ${realTotalVotes}`);
+        await totalsDocRef.set({
+          ...realCounts,
+          totalVotes: realTotalVotes,
+          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
         });
-        totalsDocRef.set(initialPayload, { merge: true });
       }
-    }).catch(err => {
-      console.warn("No se pudo verificar documento inicial en Firestore:", err);
-    });
+    } catch (reconcileErr) {
+      console.warn("No se pudo verificar la colección votes:", reconcileErr);
+    }
 
     // Escuchar cambios en vivo emitidos por cualquier lector en cualquier dispositivo
     totalsDocRef.onSnapshot(doc => {
@@ -496,21 +492,22 @@ function initFirebaseRealtimeSync() {
         let changed = false;
 
         NOMINEES_DATA.forEach(player => {
-          if (typeof data[player.id] === "number") {
-            state.votes[player.id] = data[player.id];
+          const val = typeof data[player.id] === "number" ? data[player.id] : 0;
+          if (state.votes[player.id] !== val) {
+            state.votes[player.id] = val;
             changed = true;
           }
         });
 
-        if (changed) {
+        if (changed || doc.metadata.hasPendingWrites) {
           saveVotesData();
           renderCards();
           updateStatsAndChart();
-          console.log("⚡ Votos sincronizados en tiempo real desde Firebase Firestore");
         }
+        console.log("⚡ Votos sincronizados en tiempo real desde Firebase Firestore. Total:", getTotalVotes());
       }
     }, error => {
-      console.warn("Error en suscripción de Firestore:", error);
+      console.warn("Error en suscripción de Firestore (revisar reglas de seguridad en Firebase Console):", error);
     });
   } catch (err) {
     console.warn("Fallo al inicializar sincronización Firebase:", err);
@@ -565,9 +562,10 @@ function initVotesData() {
     }
   }
 
+  // Todos los jugadores inician estrictamente en 0 votos (sin datos simulados)
   NOMINEES_DATA.forEach(player => {
     if (typeof state.votes[player.id] !== "number") {
-      state.votes[player.id] = player.initialVotes;
+      state.votes[player.id] = 0;
     }
   });
 
@@ -1007,7 +1005,7 @@ function updateStatsAndChart() {
   const totalVotes = getTotalVotes();
   document.getElementById("totalVotesCount").textContent = totalVotes.toLocaleString();
 
-  let maxVotes = -1;
+  let maxVotes = 0;
   let leaderPlayer = null;
   NOMINEES_DATA.forEach(player => {
     const v = state.votes[player.id] || 0;
@@ -1017,9 +1015,11 @@ function updateStatsAndChart() {
     }
   });
 
-  if (leaderPlayer) {
+  if (leaderPlayer && maxVotes > 0) {
     const leaderPct = totalVotes > 0 ? ((maxVotes / totalVotes) * 100).toFixed(1) : 0;
     document.getElementById("leadingPlayerName").textContent = `${leaderPlayer.name} (${leaderPct}%)`;
+  } else {
+    document.getElementById("leadingPlayerName").textContent = totalVotes > 0 ? "Empate técnico" : "Aún sin votos";
   }
 
   updateUserVotePill();
