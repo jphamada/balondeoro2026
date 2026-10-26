@@ -286,12 +286,6 @@ const STORAGE_KEYS = {
   VOTE_TIMESTAMP: "balondeoro_2026_vote_time",
   PHOTOS_CACHE: "balondeoro_2026_photos_cache"
 };
-  USER_IP: "balondeoro_2026_client_ip",
-  VOTED_IPS: "balondeoro_2026_blocked_ips",
-  HAS_VOTED: "balondeoro_2026_voted_player_id",
-  VOTE_TIMESTAMP: "balondeoro_2026_vote_time",
-  PHOTOS_CACHE: "balondeoro_2026_photos_cache"
-};
 
 // Utilidad para verificar si Firebase está configurado con credenciales válidas
 function hasValidFirebase() {
@@ -416,26 +410,30 @@ async function resolvePlayerPhoto(player) {
  * Carga e inicialización
  */
 document.addEventListener("DOMContentLoaded", async () => {
-  // Esperar a que la configuración segura de Firebase (Vercel) esté lista
-  if (typeof firebaseReadyPromise !== "undefined") {
-    await firebaseReadyPromise;
-  }
-
+  // 1. Renderizado inmediato de las 30 tarjetas de jugadores (0 ms, sin bloqueos)
   initVotesData();
   loadPhotosCache();
   populateClubFilter();
   renderCards();
   initEventListeners();
   initIframeAutoResizer();
-  
-  // Cargar verificación de IP
-  await checkUserIpAndVoteStatus();
   updateStatsAndChart();
 
-  // Conectar listener de votos en tiempo real de Firebase Firestore
+  // 2. Verificación de IP en segundo plano
+  await checkUserIpAndVoteStatus();
+
+  // 3. Esperar inicialización de Firebase y conectar listener en tiempo real
+  if (typeof firebaseReadyPromise !== "undefined") {
+    try {
+      await firebaseReadyPromise;
+    } catch (e) {
+      console.warn("Firebase promise warning:", e);
+    }
+  }
+
   initFirebaseRealtimeSync();
 
-  // Resolver fotos en paralelo de Wikipedia para garantizar 100% de éxito
+  // 4. Resolver fotos de Wikipedia en paralelo
   fetchMissingPhotos();
 });
 
