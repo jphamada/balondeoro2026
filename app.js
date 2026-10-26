@@ -440,7 +440,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 /**
  * Sincronización en tiempo real con Cloud Firestore
  */
-async function initFirebaseRealtimeSync() {
+function initFirebaseRealtimeSync() {
   if (!hasValidFirebase()) {
     console.log("ℹ️ Firebase Firestore en espera de credenciales. Operando con estado local.");
     return;
@@ -449,41 +449,7 @@ async function initFirebaseRealtimeSync() {
   try {
     const totalsDocRef = db.collection("totals").doc("balondeoro2026");
 
-    // Reconciliación: verificar los votos reales de la colección 'votes'
-    // para eliminar cualquier dato simulado residual que se haya guardado previamente
-    try {
-      const votesSnapshot = await db.collection("votes").get();
-      const realCounts = {};
-      NOMINEES_DATA.forEach(p => { realCounts[p.id] = 0; });
-      let realTotalVotes = 0;
-
-      votesSnapshot.forEach(doc => {
-        const vData = doc.data();
-        if (vData && vData.playerId && typeof realCounts[vData.playerId] === "number") {
-          realCounts[vData.playerId]++;
-          realTotalVotes++;
-        }
-      });
-
-      const currentTotalsDoc = await totalsDocRef.get();
-      const currentData = currentTotalsDoc.exists ? currentTotalsDoc.data() : null;
-
-      // Si no existe o tiene datos simulados (más de 100 votos cuando en votes hay pocos)
-      const isSimulated = currentData && typeof currentData.totalVotes === "number" && currentData.totalVotes > 100 && votesSnapshot.size < 50;
-
-      if (!currentTotalsDoc.exists || isSimulated) {
-        console.log(`🧹 Limpiando datos simulados en Firestore. Votos reales encontrados: ${realTotalVotes}`);
-        await totalsDocRef.set({
-          ...realCounts,
-          totalVotes: realTotalVotes,
-          updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-        });
-      }
-    } catch (reconcileErr) {
-      console.warn("No se pudo verificar la colección votes:", reconcileErr);
-    }
-
-    // Escuchar cambios en vivo emitidos por cualquier lector en cualquier dispositivo
+    // Escuchar cambios en vivo emitidos por los votos oficiales
     totalsDocRef.onSnapshot(doc => {
       if (doc && doc.exists) {
         const data = doc.data();
@@ -502,10 +468,9 @@ async function initFirebaseRealtimeSync() {
           renderCards();
           updateStatsAndChart();
         }
-        console.log("⚡ Votos sincronizados en tiempo real desde Firebase Firestore. Total:", getTotalVotes());
       }
     }, error => {
-      console.warn("Error en suscripción de Firestore (revisar reglas de seguridad en Firebase Console):", error);
+      console.warn("Error en suscripción de Firestore:", error);
     });
   } catch (err) {
     console.warn("Fallo al inicializar sincronización Firebase:", err);
