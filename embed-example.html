@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Ejemplo de Integración Iframe - Diario Deportivo</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f1f5f9;
+      color: #0f172a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 1.25rem 2rem;
+      border-bottom: 4px solid #d4af37;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .article-container {
+      max-width: 1040px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .article-title {
+      font-size: 2.2rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .article-lead {
+      font-size: 1.15rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .embed-box {
+      margin: 2.5rem 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      background: #0b0f19;
+    }
+    iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+      display: block;
+      transition: height 0.3s ease;
+    }
+    .code-sample {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.88rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DIARIO DEPORTES • COBERTURA ESPECIAL</h1>
+  </header>
+
+  <main class="article-container">
+    <h2 class="article-title">France Football anunció los 30 nominados oficiales al Balón de Oro 2026</h2>
+    <p class="article-lead">
+      La temporada llega a su tramo decisivo y los mejores futbolistas del planeta compiten por el máximo galardón individual del fútbol mundial. Participá en nuestra encuesta interactiva exclusiva y votá por tu favorito.
+    </p>
+
+    <!-- Contenedor del Iframe -->
+    <div class="embed-box">
+      <iframe 
+        id="balonOroIframe"
+        src="index.html" 
+        title="Votación Balón de Oro 2026"
+        loading="lazy"
+        allow="clipboard-write"
+      ></iframe>
+    </div>
+
+    <h3>Código para incrustar en cualquier nota periodística:</h3>
+    <pre class="code-sample"><code>&lt;iframe 
+  id="balonOroIframe" 
+  src="https://tudominio.com/balondeoro/index.html" 
+  width="100%" 
+  height="900" 
+  frameborder="0" 
+  scrolling="auto" 
+  allow="clipboard-write"&gt;
+&lt;/iframe&gt;
+
+&lt;!-- Script opcional para auto-ajuste de altura automático sin scrollbar --&gt;
+&lt;script&gt;
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'balon_oro_resize') {
+      var iframe = document.getElementById('balonOroIframe');
+      if (iframe) iframe.style.height = (e.data.height + 40) + 'px';
+    }
+  });
+&lt;/script&gt;</code></pre>
+  </main>
+
+  <script>
+    // Listener para ajustar altura automáticamente según el mensaje enviado por app.js
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.type === 'balon_oro_resize') {
+        const iframe = document.getElementById('balonOroIframe');
+        if (iframe && typeof e.data.height === 'number') {
+          iframe.style.height = (e.data.height + 30) + 'px';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
